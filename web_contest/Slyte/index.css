@@ -1,0 +1,76 @@
+.l_body {
+}
+.l_section {
+  max-width: 1500px;
+  margin: auto auto;
+  height: 100vh;
+  /* background-color: blanchedalmond; */
+}
+
+.c_section__left {
+  width: 30%;
+  height: auto;
+  float: left;
+  /* background-color: violet; */
+}
+.c_section__right {
+  width: 50%;
+  height: auto;
+
+  float: right;
+  /* background-color: sienna; */
+}
+.c_large__font {
+  font-size: 2.5em;
+  font-weight: bold;
+  padding: 20px;
+}
+.c_normal__font {
+  font-size: 1.5em;
+  padding: 20px;
+  font-weight: lighter;
+}
+.c_medium__font {
+  font-size: 2em;
+  padding: 20px;
+  font-weight: bold;
+}
+.c_small__font {
+  font-size: 1em;
+  padding: 20px;
+  font-weight: lighter;
+}
+.c_btn {
+  margin: 30px 0;
+}
+.c_btn p a {
+  background-color: #458ff6;
+  border-width: 2px;
+  padding: 15px 40px;
+  border-radius: 40px;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+  margin-top: 5%;
+}
+.c_section1__main {
+  width: 100%;
+  height: 100%;
+  padding-top: 100px;
+}
+.c_section1__textbox {
+  margin-top: 50%;
+}
+
+/* section2 */
+
+.c_section2__main {
+  width: 100%;
+  height: 100%;
+  background-color: yellow;
+}
+.c_section2__textbox {
+  width: 70%;
+  margin: auto auto;
+  text-align: center;
+}
