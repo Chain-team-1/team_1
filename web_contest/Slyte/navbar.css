@@ -11,8 +11,9 @@ nav {
   right: 0;
   top: 0;
   padding: 0 13% 0 14%;
-  height: 100px;
+  height: 78px;
   background-color: white;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 nav .c_logo {
   float: left;
@@ -33,7 +34,6 @@ nav .c_links {
   height: 100%;
   display: flex;
   justify-content: space-around;
-
   align-items: center;
 }
 nav .c_links li {
@@ -83,12 +83,12 @@ nav .c_icon-burger .c_line {
     z-index: 9;
     left: 100%;
     right: 0px;
-    top: 100px;
+    top: 78px;
     bottom: 0;
     width: auto;
     height: auto;
     flex-direction: column;
-    background-color: transparent;
+    background-color: white;
     overflow: hidden;
     box-sizing: border-box;
     transition: all 0.5s ease-in-out;
