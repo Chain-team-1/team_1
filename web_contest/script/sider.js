@@ -1,26 +1,66 @@
 // const sectionSlide = document.querySelector(".l_section5__box");
-const cardSlide = document.querySelectorAll(".l_section5__box");
+const slides = document.querySelectorAll(".c_slide");
 
-const preBtn = document.getElementById("prev_btn");
-const nextBtn = document.getElementById("next_btn");
+const preBtn = document.querySelector("#prevBtn");
+const nextBtn = document.querySelector ("#nextBtn");
+const dot = document.querySelectorAll(".c_dot li")
+let counter = 0;
 
-let counter = 1; 
-
-const size = cardSlide[0].clientWidth;
-
-cardSlide.style.transform = 'translateX(' + (-size * counter) + 'px)';
-
-
-nextBtn.addEventListener("click", function(){
-    cardSlide.transition = "transform 0.4s ease-in-out";
-    counter++;
-    cardSlide.style.transform = 'translateX(' + (-size * counter) + 'px)';
-
+slides.forEach(function(slide, index){
+    slide.style.left= `${index*100}%`;
 });
 
-preBtn.addEventListener("click", function(){
-    cardSlide.transition = "transform 0.4s ease-in-out";
-    counter--;
-    cardSlide.style.transform = 'translateX(' + (-size * counter) + 'px)';
+// setIndex is for dot point 
+function setIndex (){
+    document.querySelector(".c_dot .selected").classList.remove("selected");
+    slides.forEach(function(slide){
+        slide.style.transform= `translateX(-${counter*100}%)`;
+    });
+}
+// dot point function 
+dot.forEach(function(indicator,index){
+    indicator.addEventListener('click',function(){
+        counter =index;
+        indicator.classList.add("selected");
+        setIndex(counter);
+    });
+   
+});
 
+// function for swipe 
+
+function carousel(){
+    if (counter === slides.length){
+        counter = 0;
+    }
+    if (counter < 0 ){
+        counter = slides.length -1 ;
+    }
+
+    slides.forEach(function(slide){
+        slide.style.transform= `translateX(-${counter*100}%)`;
+    });
+   
+}
+
+// auto slide function 
+
+function autoslide(){
+    counter++;
+    carousel();
+    setTimeout(autoslide, 5000);
+
+}
+
+autoslide();
+
+// btn add event listener for swipe card 
+nextBtn.addEventListener("click" ,function(){
+    counter++;
+    carousel();
+
+});
+preBtn.addEventListener("click" ,function(){
+    counter--;
+    carousel();
 });
