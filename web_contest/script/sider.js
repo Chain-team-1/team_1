@@ -40,6 +40,8 @@ function carousel(){
     slides.forEach(function(slide){
         slide.style.transform= `translateX(-${counter*100}%)`;
     });
+
+    // setIndex(index);
    
 }
 
@@ -58,6 +60,7 @@ autoslide();
 nextBtn.addEventListener("click" ,function(){
     counter++;
     carousel();
+
 
 });
 preBtn.addEventListener("click" ,function(){
