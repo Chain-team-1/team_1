@@ -269,6 +269,10 @@
   .l_container2 {
     height: auto;
   }
+  .l_bg,
+  .l_bg1 {
+    background-image: none;
+  }
 }
 @media (max-width: 860px) {
   .l_container__slide {
