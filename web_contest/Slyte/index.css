@@ -128,6 +128,22 @@
 .c_btn_outline a:hover {
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
+.c_btn_outline_footer{
+  padding: 70px 0px;
+}
+.c_btn_outline_footer a {
+  border: 1.4px solid #458ff6;
+
+  border-width: 2px;
+  padding: 15px 65px;
+  border-radius: 40px;
+  font-weight: bold;
+  color: #458ff6;
+  text-decoration: none;
+}
+.c_btn_outline_footer a:hover {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
 
 /* section2 */
 
