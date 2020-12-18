@@ -1,12 +1,3 @@
-const slides = document.querySelectorAll(".c_slide");
-
-const preBtn = document.querySelector("#prevBtn");
-const nextBtn = document.querySelector ("#nextBtn");
-const indicatorParent = document.querySelector('.c_dot '); 
-const indicators = document.querySelectorAll('.c_dot li');
-let index = 0;
-
-
 //navbar fixed 
 
 
@@ -28,7 +19,13 @@ slides.forEach(function(slide, index){
     slide.style.left= `${index*100}%`;
 });
 
+const slides = document.querySelectorAll(".c_slide");
 
+const preBtn = document.querySelector("#prevBtn");
+const nextBtn = document.querySelector ("#nextBtn");
+const indicatorParent = document.querySelector('.c_dot '); 
+const indicators = document.querySelectorAll('.c_dot li');
+let index = 0;
 
 
 // function for swipe 
