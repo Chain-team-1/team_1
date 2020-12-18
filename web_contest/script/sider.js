@@ -1,10 +1,10 @@
-// const sectionSlide = document.querySelector(".l_section5__box");
 const slides = document.querySelectorAll(".c_slide");
 
 const preBtn = document.querySelector("#prevBtn");
 const nextBtn = document.querySelector ("#nextBtn");
-const dot = document.querySelectorAll(".c_dot li")
-let counter = 0;
+const indicatorParent = document.querySelector('.c_dot '); 
+const indicators = document.querySelectorAll('.c_dot li');
+let index = 0;
 
 
 //navbar fixed 
@@ -29,34 +29,24 @@ slides.forEach(function(slide, index){
 });
 
 
-// dot point function 
-dot.forEach(function(indicator,index){
-    indicator.addEventListener('click',function(){
-        document.querySelector(".c_dot .selected").classList.remove("selected");
-        
-        counter =index;
-        indicator.classList.add("selected");
-        slides.forEach(function(slide){
-            slide.style.transform= `translateX(-${counter*100}%)`;
-        });
-    });
-   
-});
+
 
 // function for swipe 
 
 function carousel(){
-    if (counter === slides.length){
-        counter = 0;
+    if (index === slides.length){
+        index = 0;
     }
-    if (counter < 0 ){
-        counter = slides.length -1 ;
+    if (index < 0 ){
+        index = slides.length -1 ;
     }
 
     slides.forEach(function(slide){
-        slide.style.transform= `translateX(-${counter*100}%)`;
+        slide.style.transform= `translateX(-${index*100}%)`;
     });
 
+    document.querySelector('.c_dot .selected').classList.remove('selected');
+    indicatorParent.children[index].classList.add('selected');
     // setIndex(index);
    
 }
@@ -64,22 +54,34 @@ function carousel(){
 // auto slide function 
 
 function autoslide(){
-    counter++;
+    index++;
     carousel();
     setTimeout(autoslide, 5000);
 
-}
+};
 
 autoslide();
 
+// dot point function 
+indicators.forEach((indicator, i) => {
+    indicator.addEventListener('click', () => {
+      document.querySelector('.c_dot .selected').classList.remove('selected');
+      indicator.classList.add('selected');
+      slider.style.transform = 'translateX(' + (i) * -25 + '%)';  
+      index = i;
+      
+    });
+  });
+
 // btn add event listener for swipe card 
 nextBtn.addEventListener("click" ,function(){
-    counter++;
+    index++;
     carousel();
 
 
 });
 preBtn.addEventListener("click" ,function(){
-    counter--;
+    index--;
     carousel();
+
 });
