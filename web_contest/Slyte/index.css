@@ -54,12 +54,12 @@
 .l_container {
   max-width: 1300px;
   margin: auto auto;
-  height: 100vh;
+  height: 110vh;
 }
 .l_container2 {
   max-width: 1300px;
   margin: auto auto;
-  height: 75vh;
+  height: auto;
 }
 
 /* left and right box */
@@ -128,7 +128,7 @@
 .c_btn_outline a:hover {
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
-.c_btn_outline_footer{
+.c_btn_outline_footer {
   padding: 70px 0px;
 }
 .c_btn_outline_footer a {

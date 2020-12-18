@@ -15,9 +15,6 @@ window.addEventListener("scroll", function(){
 
 
 
-slides.forEach(function(slide, index){
-    slide.style.left= `${index*100}%`;
-});
 
 const slides = document.querySelectorAll(".c_slide");
 
@@ -27,6 +24,9 @@ const indicatorParent = document.querySelector('.c_dot ');
 const indicators = document.querySelectorAll('.c_dot li');
 let index = 0;
 
+slides.forEach(function(slide, index){
+    slide.style.left= `${index*100}%`;
+});
 
 // function for swipe 
 
@@ -60,15 +60,17 @@ function autoslide(){
 autoslide();
 
 // dot point function 
-indicators.forEach((indicator, i) => {
+indicators.forEach((indicator, index) => {
     indicator.addEventListener('click', () => {
-      document.querySelector('.c_dot .selected').classList.remove('selected');
-      indicator.classList.add('selected');
-      slider.style.transform = 'translateX(' + (i) * -25 + '%)';  
-      index = i;
-      
+    slides.forEach(function(slide){
+        slide.style.transform= `translateX(-${index*100}%)`;
     });
-  });
+    
+    document.querySelector('.c_dot .selected').classList.remove('selected');
+    indicatorParent.children[index].classList.add('selected');
+    //   index = i;
+    });
+});
 
 // btn add event listener for swipe card 
 nextBtn.addEventListener("click" ,function(){

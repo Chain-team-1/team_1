@@ -53,6 +53,9 @@
 .l_nav .c_links a:hover {
   font-weight: bolder;
 }
+.l_nav .c_links .c_active {
+  font-weight: bolder;
+}
 
 #c_nav-toggle {
   position: absolute;
