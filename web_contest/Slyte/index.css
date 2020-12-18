@@ -8,16 +8,16 @@
 }
 /* background */
 .l_bg2 {
-  background-image: url(/Image/bubble.svg);
+  background-image: url(../Image/bubble.svg);
   background-repeat: no-repeat;
 }
 .l_bg3 {
-  background-image: url(/Image/bubbleLeft.svg);
+  background-image: url(../Image/bubbleLeft.svg);
   background-repeat: no-repeat;
   background-position: right;
 }
 .l_bg1 {
-  background-image: url(/Image/dot.png);
+  background-image: url(../Image/dot.png);
   background-repeat: no-repeat;
   background-position-y: 30%;
 }
@@ -54,7 +54,7 @@
 .l_container {
   max-width: 1300px;
   margin: auto auto;
-  height: 110vh;
+  height: 100vh;
 }
 .l_container2 {
   max-width: 1300px;
