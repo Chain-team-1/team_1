@@ -28,19 +28,17 @@ slides.forEach(function(slide, index){
     slide.style.left= `${index*100}%`;
 });
 
-// setIndex is for dot point 
-function setIndex (){
-    document.querySelector(".c_dot .selected").classList.remove("selected");
-    slides.forEach(function(slide){
-        slide.style.transform= `translateX(-${counter*100}%)`;
-    });
-}
+
 // dot point function 
 dot.forEach(function(indicator,index){
     indicator.addEventListener('click',function(){
+        document.querySelector(".c_dot .selected").classList.remove("selected");
+        
         counter =index;
         indicator.classList.add("selected");
-        setIndex(counter);
+        slides.forEach(function(slide){
+            slide.style.transform= `translateX(-${counter*100}%)`;
+        });
     });
    
 });
