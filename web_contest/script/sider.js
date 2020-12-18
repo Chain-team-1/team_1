@@ -6,6 +6,24 @@ const nextBtn = document.querySelector ("#nextBtn");
 const dot = document.querySelectorAll(".c_dot li")
 let counter = 0;
 
+
+//navbar fixed 
+
+
+window.addEventListener("scroll", function(){
+    const navBar = document.querySelector("nav");
+    const scrollHeight = window.pageYOffset;
+    const navbarHeight = navBar.getBoundingClientRect().height;
+    if (scrollHeight >navbarHeight){
+        navBar.classList.add('c_sticky');
+
+    }else{
+        navBar.classList.remove("c_sticky")
+    }
+});
+
+
+
 slides.forEach(function(slide, index){
     slide.style.left= `${index*100}%`;
 });
