@@ -334,6 +334,9 @@ footer {
   color: white;
   padding: 30px 0px;
 }
+.c_footer__box ul li a:hover {
+  color: blue;
+}
 .c_footer__box___logo h3 {
   font-weight: bold;
   margin: 20px 0px;
