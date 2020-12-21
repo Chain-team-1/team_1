@@ -47,8 +47,8 @@ function carousel(){
         slide.style.transform= `translateX(-${index*100}%)`;
     });
 
-    document.querySelector('.c_dot .selected').classList.remove('selected');
-    indicatorParent.children[index].classList.add('selected');
+    document.querySelector('.c_dot .c_selected').classList.remove('c_selected');
+    indicatorParent.children[index].classList.add('c_selected');
     // setIndex(index);
    
 }
