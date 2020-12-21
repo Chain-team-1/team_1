@@ -113,10 +113,10 @@
   color: white;
   text-decoration: none;
 }
-.c_btn_outline {
+.c_btn__outline {
   padding: 20px 0px;
 }
-.c_btn_outline a {
+.c_btn__outline a {
   border: 1.4px solid #458ff6;
 
   border-width: 2px;
@@ -126,13 +126,13 @@
   color: #458ff6;
   text-decoration: none;
 }
-.c_btn_outline a:hover {
+.c_btn__outline a:hover {
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
-.c_btn_outline_footer {
+.c_btn__outline___footer {
   padding: 70px 0px;
 }
-.c_btn_outline_footer a {
+.c_btn__outline___footer a {
   border: 1.4px solid #458ff6;
 
   border-width: 2px;
@@ -142,7 +142,7 @@
   color: #458ff6;
   text-decoration: none;
 }
-.c_btn_outline_footer a:hover {
+.c_btn__outline___footer a:hover {
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
