@@ -11,11 +11,16 @@ window.addEventListener("scroll", function(){
     }else{
         navBar.classList.remove("c_sticky")
     }
-});
+}); 
 
-
-
-
+const menuItem = document.querySelectorAll(".c_links li");
+menuItem.forEach((item) => {
+    item.addEventListener("click",() => {
+        const activeClass = document.querySelector(".c_active");
+        activeClass.className = activeClass.className.replace("active", "");
+        item.className += 'c_active';
+    })
+})
 const slides = document.querySelectorAll(".c_slide");
 
 const preBtn = document.querySelector("#prevBtn");
