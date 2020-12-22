@@ -57,6 +57,7 @@
   height: 100vh;
 }
 .l_container2 {
+  position: relative;
   max-width: 1300px;
   margin: auto auto;
   height: auto;
@@ -163,6 +164,7 @@
 }
 
 .c_section__card {
+  
   display: flex;
   flex-wrap: wrap;
   margin: 20px;
@@ -202,9 +204,8 @@
 
 .c_slide {
   width: 100%;
-  height: 50vh;
+  height: 40vh;
   background: linear-gradient(208.18deg, #67c3f3 9.05%, #5a98f2 76.74%);
-
   border-radius: 30px;
   position: absolute;
   transition: all 0.25s ease-in-out;
@@ -264,6 +265,14 @@
 .c_dot {
   display: flex;
   list-style: none;
+}
+.l_background__dot{
+  z-index: -1;
+  background-image: url(/Image/dot.png);
+  background-repeat: no-repeat;
+  position: absolute;
+  margin-left:83%;
+  top:50%;
 }
 
 .c_dot li {
@@ -402,7 +411,7 @@ footer {
     height: 70vh;
   }
   .c_slide {
-    height: 60vh;
+    height: 50vh;
   }
   .c_slide__item,
   .c_profile {
@@ -453,7 +462,7 @@ footer {
     height: 70vh;
   }
   .c_slide {
-    height: 60vh;
+    height: 50vh;
   }
 }
 
