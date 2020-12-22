@@ -7,6 +7,24 @@
   box-sizing: border-box;
 }
 /* background */
+@media (max-width: 2350px){
+  .l_background__dot___feedback____left{
+    display: none;
+  }
+}
+@media (max-width: 2100px){
+  .l_footer__dot2{
+    display: none;
+  }
+}
+@media (max-width: 1000px) {
+  .l_footer__dot1,
+  .l_background__dot___section6,
+  .l_background__dot,
+  .l_background__dot2{
+    display: none;
+  }
+}
 .l_bg2 {
   background-image: url(../Image/bubble.svg);
   background-repeat: no-repeat;
@@ -15,6 +33,7 @@
   background-image: url(../Image/bubbleLeft.svg);
   background-repeat: no-repeat;
   background-position: right;
+  padding-bottom: 170px;
 }
 .l_bg1 {
   background-image: url(../Image/dot.png);
@@ -28,6 +47,51 @@
   position: absolute;
   margin-left:83%;
   top:50%;
+}
+.l_background__dot___section6{
+  z-index: -1;
+  background-repeat: no-repeat;
+  height:100px;
+  position: absolute;
+  margin-left:1%;
+  top:7%;
+}
+.l_background__dot2{
+  z-index: -1;
+  background-repeat: no-repeat;
+  height:100px;
+  position: absolute;
+  top:230%;
+  right: 0%;
+}
+.l_footer__dot1{
+  position: absolute;
+  top: -27%;
+  right:0%;
+}
+.l_footer__dot2{
+  position: absolute;
+  z-index: 1;
+  bottom: 0;
+  left:15%;
+  opacity: 0.6;
+}
+.l_background__dot___feedback{
+  z-index: -1;
+  background-repeat: no-repeat;
+  height:100px;
+  position: absolute;
+  margin-left:91%;
+  top:4%;
+  opacity: 0.6;
+}
+.l_background__dot___feedback____left{
+  z-index: 1;
+  background-repeat: no-repeat;
+  height:100px;
+  position: absolute;
+  margin-left:19.6%;
+  top:315%;
 }
 /* logo */
 .c_logo__img {
@@ -258,7 +322,7 @@
   position: absolute;
   display: flex;
   left: 0;
-  bottom: 0;
+  bottom: 17%;
   width: 100%;
   justify-content: center;
 }
@@ -338,6 +402,7 @@ footer {
   justify-content: center;
   width: 100%;
   height: 300px;
+  position: relative;
   background: linear-gradient(183.41deg, #67c3f3 -8.57%, #5a98f2 82.96%);
 }
 .c_footer__box___logo {
@@ -394,7 +459,8 @@ footer {
   .l_container2 {
     height: auto;
   }
-  .l_background__dot{
+  .l_background__dot,
+  .l_background__dot2{
     display: none;
   }
   .l_bg1,
