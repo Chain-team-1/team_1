@@ -21,6 +21,14 @@
   background-repeat: no-repeat;
   background-position-y: 30%;
 }
+.l_background__dot{
+  z-index: -1;
+  background-repeat: no-repeat;
+  height:100px;
+  position: absolute;
+  margin-left:83%;
+  top:50%;
+}
 /* logo */
 .c_logo__img {
   width: 36px;
@@ -119,7 +127,6 @@
 }
 .c_btn__outline a {
   border: 1.4px solid #458ff6;
-
   border-width: 2px;
   padding: 15px 35px;
   border-radius: 40px;
@@ -135,7 +142,6 @@
 }
 .c_btn__outline___footer a {
   border: 1.4px solid #458ff6;
-
   border-width: 2px;
   padding: 15px 65px;
   border-radius: 40px;
@@ -164,7 +170,6 @@
 }
 
 .c_section__card {
-  
   display: flex;
   flex-wrap: wrap;
   margin: 20px;
@@ -266,15 +271,6 @@
   display: flex;
   list-style: none;
 }
-.l_background__dot{
-  z-index: -1;
-  background-image: url(/Image/dot.png);
-  background-repeat: no-repeat;
-  position: absolute;
-  margin-left:83%;
-  top:50%;
-}
-
 .c_dot li {
   height: 5px;
   width: 5px;
@@ -397,6 +393,9 @@ footer {
   }
   .l_container2 {
     height: auto;
+  }
+  .l_background__dot{
+    display: none;
   }
   .l_bg1,
   .l_bg2,
