@@ -437,12 +437,12 @@ footer {
 /* responsive part  */
 
 @media (max-width: 2350px) {
-  .l_background__dot___feedback____left {
+  .c_background__dot___feedback____left {
     display: none;
   }
 }
 @media (max-width: 2100px) {
-  .l_footer__dot2 {
+  .c_footer__dot2 {
     display: none;
   }
 }
@@ -457,10 +457,10 @@ footer {
   .l_background__dot {
     display: none;
   }
-  .l_footer__dot1,
-  .l_background__dot___section6,
-  .l_background__dot,
-  .l_background__dot2,
+  .c_footer__dot1,
+  .c_background__dot___section6,
+  .c_background__dot,
+  .c_background__dot2,
   .l_bg1,
   .l_bg2,
   .l_bg3 {
