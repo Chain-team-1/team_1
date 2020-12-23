@@ -6,13 +6,12 @@
 }
 .l_nav {
   position: fixed;
-  z-index: 20;
-  left: 0%;
-  right: 0%;
-  top: 0%;
+  z-index: 9;
+  left: 0;
+  right: 0;
+  top: 0;
   padding: 0 13% 0 14%;
   height: 78px;
-  width: 100%;
   background-color: white;
 }
 
@@ -80,7 +79,6 @@
 @media screen and (max-width: 1255px) {
   .l_nav {
     padding: 0% 5%;
-    width: 100%;
   }
   .l_nav.c_logo {
     float: none;
@@ -96,7 +94,7 @@
     left: 100%;
     right: 0px;
     top: 78px;
-    bottom: 0px;
+    bottom: 0;
     width: auto;
     height: auto;
     flex-direction: column;
